@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-shell: #fbf7f1;
+  --color-surface: #ffffff;
+  --color-ink: #1d1a17;
+  --color-muted: #6b625a;
+  --color-line: #e8e0d5;
+  --color-brand: #c2410c;
+  --color-brand-dark: #9a3412;
+  --color-brand-soft: #fff1e8;
+  --color-accent: #0f766e;
+  --color-accent-soft: #e6f5f3;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-shell);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Keyboard focus stays visible everywhere; pointer clicks don't get a ring. */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
